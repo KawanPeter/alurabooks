@@ -17,7 +17,7 @@
     <header class="cabecalho">
         <div class="container">
             <input type="checkbox" id="menu" class="container__botao">
-            <label for="menu">
+            <label for="menu" class="container__rotulo">
                 <span class="cabecalho__menu-hamburguer container__imagem"></span>
             </label>
             <ul class="lista-menu">
@@ -44,7 +44,7 @@
 
         <ul class="opções">
             <input type="checkbox" id="opções-menu" class="opções__botão">
-                <label for="opções-menu">
+                <label for="opções-menu" class="opções__rotulo">
                     <li class="opções__item">Categoria</li>
                 </label>
 
@@ -73,8 +73,14 @@
         <div class="container">
             <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" 
                 class="container__imagem container__imagem-transparente"></a>
-            <a href="#"><img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
-            <a href="#"><img src="img/Usuário.svg" alt="Meu perfil" class="container__imagem"></a>
+            <a href="#" class="container__link">
+                <img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem">
+                <p class="container__texto">Minha Sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/Usuário.svg" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu Perfil</p>
+            </a>
         </div>
     </header>
     <section class="banner">
@@ -85,6 +91,7 @@
     <section class="carrossel">
         <h2 class="carrossel__titulo">Novos lançamentos</h2>
             <!-- Slider main container -->
+        <div class="carrossel__container">
         <div class="swiper">
             <!-- Additional required wrapper -->
             
@@ -128,11 +135,14 @@
                 </ul>
             <!-- 2ºa coluna -->
             <a href="#" class="botoes__ancora">Saiba mais</a>
-            </div>
+             </div>
+           </div>
         </div>
+    </section>
     <section class="carrossel">
         <h2 class="carrossel__titulo">MAIS VENDIDOS</h2>
         <!-- Slider main container -->
+        <div class="carrossel__container">
         <div class="swiper">
             <!-- Additional required wrapper -->
             
@@ -179,6 +189,7 @@
             <a href="#" class="botoes__ancora">Saiba mais</a>
             </div>
         </div>
+    </div>
     </section>
 
     <section class="tópicos">
